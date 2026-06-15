@@ -211,17 +211,7 @@ function DigitalCard() {
     <section ref={ref} className="py-20 px-5 section-bg">
       <div className="max-w-5xl mx-auto">
         <div className={`transition-all duration-700 ${visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}`}>
-          <div className="flex justify-center mb-10">
-            <Image
-              src="/nfc-card.png"
-              alt="NFCデジタル名刺"
-              width={900}
-              height={500}
-              className="rounded-2xl"
-              style={{ objectFit: "cover", maxWidth: "100%", boxShadow: "0 12px 48px rgba(13,42,78,0.18)" }}
-            />
-          </div>
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mt-8">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
             {[
               { icon: "🌿", title: "ペーパーレス対応", body: "紙資源削減に貢献します。" },
               { icon: "🔄", title: "情報をいつでも更新", body: "常に最新の情報を表示。" },
